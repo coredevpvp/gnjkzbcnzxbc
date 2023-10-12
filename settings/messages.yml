@@ -1,0 +1,67 @@
+##########################################
+#              Bot Messages              #
+##########################################
+
+NO_PERMSBOT: "I don't have permissions."
+NO_PERMSUSER: "You do not have permission to use this command."
+DISABLE_COMMAND: "This command is disabled."
+
+##########################################
+#             Ticket Messages            #
+##########################################
+
+TICKET: 
+  NO_PERMS: "You **DO NOT** have permission to use this feature"
+  PANEL_MESSAGE: "Click one of the options below this message based on what you need.\n\n<ticketPanel>\n\n"
+  TICKET_OPEN_REASON_ENABLED: "Thank you for contacting the support team, wait patiently for a staff to assist you, remember **do not ping staff members**!\n\n**📋 | Ticket Reason:**\n<ticketReason>\n\n**🕛 | Creation Date**\n<creationDate>\n\nIf you do not reply to a ticket in under __12 hours__, your ticket may be closed!"
+  TICKET_OPEN_REASON_DISABLED: "Thank you for contacting the support team, wait patiently for a staff to assist you, remember **do not ping staff members**!\n\n**🕛 | Creation Date**\n<creationDate>\n\nIf you do not reply to a ticket in under __12 hours__, your ticket may be closed!"
+  TICKET_CLOSED_BY: "The ticket was closed by"
+  TICKET_CREATING: "Creating ticket...."
+  TICKET_CREATED: "Ticket Created <channel>" # Placeholders <channel>
+  WHAT_DO_YOU_WANT: "¿What do you want to do?"
+  TICKET_CONFIRMATION: "Are you sure you want to close the ticket?"
+  TICKET_CLAIMED: "The ticket was claimed by <user>" # Placeholders: <user>
+  TICKET_REOPEN: "The ticket war reopen by"
+  TICKET_CLOSED: "The ticket was closed by <user>" # Placeholders <user>
+  ALREADY_OPEN: "❌ | You already have a ticket created!"
+  ALERT_MESSAGE: "Hey  <user>, you have 5 minutes to answer the ticket, otherwise it will be closed!"
+  ALERT_SENT: "<user> was notified correctly, if you do not respond within 5 minutes your ticket will be closed"
+TICKET_REASON:
+  LABEL: "For what reason will you create a ticket?"
+  PLACEHOLDER: "What is the reason why you will create a ticket?"
+
+##########################################
+#             Verify Messages            #
+##########################################
+
+VERIFY:
+  PANEL_SENT: "The panel was successfully sent to the channel <channel>."
+  SUCCESSFULY: "**✅** | You verified correctly!"
+  ALREADY_VERIFIED: "❌ | You are already verified!"
+
+##########################################
+#          Reaction-Role Messages        #
+##########################################
+
+REACTION_ROLES: 
+  REMOVED_TITLE: "Role removed" 
+  REMOVED_DESCRIPTION: "Successfuly removed <role>" # Placeholders <role>
+  ADDED_TITLE: "Role Added"
+  ADDED_DESCRIPTION: "Successfuly added <role>" # Placeholders <role>
+
+##########################################
+#        Blacklist-Words Messages        #
+##########################################
+
+BLACKLIST_WORDS:
+  WARNING: "Hey <user>, That word is forbidden on this server, don't use it or you will be penalized!" # Placeholders <user>
+
+##########################################
+#           Suggestion Messages          #
+##########################################
+
+SUGGESTION: # Placeholders <suggester>
+  ALREADY_VOTED_YES: "You have already voted yes on the suggestion of <suggester>" 
+  ALREADY_VOTED_NO: "You have already voted no on the suggestion of <suggester>" 
+  NO_VOTES_EMBED: "No votes"  
+

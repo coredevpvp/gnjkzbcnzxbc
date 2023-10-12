@@ -1,0 +1,200 @@
+##########################################
+#              Support Server            #
+#         https://discord.gg/9aPaX3apCQ  #
+##########################################                         
+
+##########################################
+#              Bot Config                #
+##########################################
+
+PREFIX: "s!"
+BOTNAME: "Saturn Bot"
+EMBEDCOLOR: "#c013ff"
+LICENSE_KEY: "LICENSE-KEY-HERE"
+TOKEN: 'TOKEN-BOT-HERE'
+GUILDID: 'GUILD-ID-HERE' 
+mongooseConnectionString: 'MONGOOSE-CONNECTION-URI'
+
+##########################################
+#             Activity Config            #
+##########################################
+
+ACTIVITY:
+  ACTIVITIES:  # Placeholders 
+    ACTIVITY1: "Saturn Bot"
+    ACTIVITY2: ".gg/saturn"
+    ACTIVITY3: "Saturn Studios"
+    ACTIVITYTYPE1: "PLAYING"
+    ACTIVITYTYPE2: "WATCHING"
+    ACTIVITYTYPE3: "COMPETING"
+
+##########################################
+#           Ticket Settings              #
+##########################################
+
+TICKET:
+  REASON_ENABLED: true
+  SERVER-NAME: Saturn Studios
+  LOGS-SYSTEM: true
+  MESSAGE_PANEL: "Da click en el icono"
+  BANNER: "https://images-ext-2.discordapp.net/external/sAxfSz7vTKZzuVNqAPWVrAsWOSEe_NAFVxobjHZd9Oc/https/media.discordapp.net/attachments/859542371692052500/949906479908020255/standard.gif" # OPTIONAL
+EMOJIS:
+  CLOSE: "🔒"
+  CLAIM: "🙋‍♂️"
+  TRANSCRIPT: "📑"
+  RE_OPEN: "🔓"
+  DELETE: "⛔"
+  CLOSE_LABEL: "Close"
+  CLAIM_LABEL: "Claim"
+  TRANSCRIPT_LABEL: "Transcript"
+  DELETE_LABEL: "Delete"
+  RE_OPEN_LABEL: "Re-Open"
+
+
+##########################################
+#          Giveaway Settings             #
+##########################################
+
+GIVEAWAYS:
+  BOTS_CAN_WIN: false
+  EMBED_COLOR: "WHITE"
+  EMBED_COLOR_END: "RED"
+  EMBED_COLOR_PAUSED: "YELLOW"
+  REROLL_WINNERS: 1
+  LAST_CHANCE: "false"
+  LAST_CHANCE_COLOR: "YELLOW"
+  REACTION: "🎉"
+
+##########################################
+#          Economy Settings              #
+##########################################
+
+ECONOMY: 
+  JOBS: ["Camionero", "Desarrollador", "Taxista", "Astronauta"]
+  WORK_COOLDOWN: 3 # Minutes (NOT WORKING)
+
+##########################################
+#            Music Settings              #
+##########################################
+
+MUSIC_SYSTEM:
+  LEAVE_ON_EMPTY: false
+  LEAVE_ON_STOP: false
+  LEAVE_ON_END: false
+
+##########################################
+#            Anti-Raid Settings          #
+##########################################
+
+ANTI_RAID: # WARNING: Check that the bot has a higher role than other people, otherwise it could fail.
+  ENABLED: true # ADVERTENCIA: Compruebe que el rol del bot este por encima de los demas, de lo contrario podria fallar.
+  BYPASS_ROLES: [] # Roles ID Example ['948794255676166154']
+  BYPASS_USERS: ['852300860176597002', '944622203792658485'] # User ID Example ['852300860176597002']
+  SANCTION: 'kick' # removeAllRoles & ban & kick
+  REASON: 'Saturn Anti-Raid System'
+  SETTINGS: [ "channelDelete", "roleCreate", "roleDelete", "threadCreate", "threadDelete", ] # channelDelete, roleCreate, roleDelete, threadCreate, threadDelete
+  MAX_ACTIONS: '2'  # Max Actions per Time
+  TIME: '30000' # Time in ms
+  ANTI_JOIN_BOTS: true
+  
+
+##########################################
+#         Welcome/Leave Settings         #
+##########################################
+
+WELCOME_SYSTEM:
+  ENABLED: true
+  MESSAGE_EMBED: # Placeholders {user-tag) example: rtx#3317 {user-mention} example: @rtx#3317 {member-count} {server-name} {user-id}
+    TITLE: "**Welcome {user-tag}**"
+    DESCRIPTION: "Hello {user-mention}, Welcome to {server-name}\n\nWith you we are now: **{member-count} members**\nMember ID: **{member-id}**"
+    FOOTER: "{server-name} | Welcomes"
+
+LEAVE_SYSTEM:
+  ENABLED: true
+  MESSAGE_EMBED:
+    TITLE: "**Goodbye {user-tag}**"
+    DESCRIPTION: "Goodbye {user-mention}, thanks for being part of the community.\n\nWe are now **{member-count}** members\nMember ID: **{member-id}**"
+    FOOTER: "{server-name} | Leaves"
+
+##########################################
+#             Verify Settings            #
+##########################################
+
+VERIFY_SYSTEM: 
+  ROLE_ID: "948794255676166154"
+  EMBED_CONFIG:
+    TITLE: "Saturn | Verify"
+    DESCRIPTION: "🇪🇦 | Para verificarte y poder ver todos los canales clickea en el boton!\n\n🇺🇸 | To verify yourself and be able to see all the channels click on the button!"
+    FOOTER: "If you can't verify yourself, contact a staff"
+    BANNER: "https://images-ext-2.discordapp.net/external/sAxfSz7vTKZzuVNqAPWVrAsWOSEe_NAFVxobjHZd9Oc/https/media.discordapp.net/attachments/859542371692052500/949906479908020255/standard.gif"
+  BUTTON:
+    LABEL: "Verify"
+    STYLE: "SECONDARY" # PRIMARY, SECONDARY, SUCCESS, DANGER
+    EMOJI: "✅"
+  
+
+##########################################
+#            Suggest Settings            #
+##########################################
+
+SUGGEST_SYSTEM:
+  ENABLED: true
+  CHANNEL_ID: "949907502844235786"
+  EMOJIS: 
+    UPVOTE: "⬆️"
+    DOWNVOTE: "⬇️"
+    VOTES: "❓"
+
+VOTES_EMBED:
+  TITLE: "Suggestion Votes"
+  UPVOTES: "✅ UpVotes"
+  DOWNVOTES: "❌ DownVotes"
+
+##########################################
+#            8Ball Settings              #
+##########################################
+    
+BALL: 
+  CONFIG: ["Si", "No", "Tal Vez", "Obviamente", "No lo creo", "Mi base de datos indica que no", "Mi base de datos indica que si", "Por supuesto"]
+
+##########################################
+#        Reaction Roles Settings         #
+##########################################
+
+REACTION_ROLES:
+  ENABLED: true
+  EMBED_CONFIG:
+    TITLE: "Saturn | Autoroles"
+    DESCRIPTION: "Para evitar la saturación de Tags, hemos implementado un sistema de roles para que tú puedas decidir que alertas recibir.\n\nPara ello deberás hacer click al menu y seleccionar el rol que desees."
+    FOOTER: ""
+    COLOR: "WHITE"
+
+
+
+##########################################
+#               Logs Settings            #
+##########################################
+
+LOGS_SYSTEM:
+  LOG_ENABLED: true
+  ENABLED:
+    - "MessageEdited"
+    - "MessageDeleted"
+
+##########################################
+#        Minecraft Commands              #
+##########################################
+
+MINECRAFT:
+  ENABLED:
+    STORE: true
+    IP: true
+    TEAMSPEAK: true
+    SKIN: true
+
+
+##########################################
+#        Saturn Bot By rtx#3317          #
+#             Saturn Studios             #
+##########################################
+
